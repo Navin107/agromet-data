@@ -1,0 +1,257 @@
+{
+	"@context": "https://voc.iudx.org.in/",
+	"type": [
+		"adex:Resource",
+		"adex:AgriAdvisory",
+		"iudx:Resource",
+		"iudx:AgriAdvisory"
+	],
+	"id": "imd.gov.in/d7733b0c544dfb3137767e5efa2c1ccd3b069bf8/rs.adex.org.in/agromet-imd/advisory-subdistrict-data",
+	"name": "advisory-subdistrict-data",
+	"label": "Agriculture Subdistrict (ASD) Level Agromet Advisory Data in Telangana State",
+	"description": "Publishes expert advisory from Agromet (Agricultural Meterology Division) about weather, crop cultivation, pest control, livestock rearing etc. for the welfare of farmers, every Tuesdays and Fridays, for various mandals (ASD) of Telangana state.",
+	"tags": [
+		"Advisory",
+		"district",
+		"crop",
+		"subdistrict",
+		"general advisory",
+		"state advisory",
+		"regional advisory"
+	],
+	"itemStatus": "ACTIVE",
+	"resourceGroup": "imd.gov.in/d7733b0c544dfb3137767e5efa2c1ccd3b069bf8/rs.adex.org.in/agromet-imd",
+	"provider": "imd.gov.in/d7733b0c544dfb3137767e5efa2c1ccd3b069bf8",
+	"resourceType": "MESSAGESTREAM",
+	"adexResourceAPIs": [
+		"ATTR",
+		"TEMPORAL"
+	],
+	"iudxResourceAPIs": [
+		"ATTR",
+		"TEMPORAL"
+	],
+	"location": {
+		"geometry": {
+			"coordinates": [
+				[
+					[
+						77.179011,
+						18.556975
+					],
+					[
+						77.047585,
+						15.14819
+					],
+					[
+						81.059914,
+						16.55208
+					],
+					[
+						81.384916,
+						17.721272
+					],
+					[
+						80.569225,
+						19.514793
+					],
+					[
+						78.217742,
+						20.06644
+					],
+					[
+						77.179011,
+						18.556975
+					]
+				]
+			],
+			"type": "Polygon"
+		},
+		"type": "Place",
+		"address": "Telangana"
+	},
+	"dataDescriptor": {
+		"@context": "https://agrijson.adex.org.in/",
+		"type": [
+			"iudx:DataDescriptor",
+			"iudx:AgriAdvisory",
+			"adex:DataDescriptor",
+			"adex:AgriAdvisory"
+		],
+		"dataDescriptorLabel": "Data descriptor for Agromet Advisory data Information at mandal (ASD) level in Telangana State",
+		"description": "Data attribute details of Agromet Advisory data Information at mandal (ASD) level in Telangana State.",
+		"stateCode": {
+			"type": [
+				"ValueDescriptor"
+			],
+			"description": "The state code corresponding to this observation..",
+			"dataSchema": "iudx:Text"
+
+		},
+		"stateName": {
+			"type": [
+				"ValueDescriptor"
+			],
+			"description":"Name of the state corresponding to this observation.",
+			"dataSchema": "iudx:Text"
+		},
+		"districtCode": {
+			"type": [
+				"ValueDescriptor"
+			],
+			"description": "The district code corresponding to this observation.",
+			"dataSchema": "iudx:Text"
+
+		},
+		"districtName": {
+			"type": [
+				"ValueDescriptor"
+			],
+			"description":"Name of the district corresponding to this observation.",
+			"dataSchema": "iudx:Text"
+		},
+		"subdistrictCode": {
+			"type": [
+				"ValueDescriptor"
+			],
+			"description": "The subdistrict code corresponding to this observation.",
+			"dataSchema": "iudx:Text"
+
+		},
+		"subdistrictName": {
+			"type": [
+				"ValueDescriptor"
+			],
+			"description":"Name of the subdistrict corresponding to this observation. A subdistrict is also called as a tehsil, mandal, tahsil, tahasil, taluka, taluk, or taluq across the Indian states.",
+			"dataSchema": "iudx:Text"
+		},
+		"commodityCode": {
+			"type": [
+				"ValueDescriptor"
+			],
+			"description": "The unique code for the commodity corresponding to this observation.",
+			"dataSchema": "iudx:Text"
+
+		},
+		"commodityName": {
+			"type": [
+				"ValueDescriptor"
+			],
+			"description":"The common/local name of the commodity corresponding to the observation.",
+			"dataSchema": "iudx:Text"
+		},
+		"agriculturalCategory": {
+			"type": [
+				"ValueDescriptor"
+			],
+			"description": "The name of the agricultural category corresponding to this observation. ENUM['crop',  'horticulture', 'livestock', 'fisheries', 'Poultry', 'others (Soil / Land Preparation)', 'sericulture'].",
+			"dataSchema": "iudx:Text"
+
+		}, 
+		"regionalLangID": {
+			"type": [
+				"ValueDescriptor"
+			],
+			"description": "The unique ID representing the regional language of the location corresponding to this observation.",
+			"dataSchema": "iudx:Text"
+
+		},
+		"regionalLangName": {
+			"type": [
+				"ValueDescriptor"
+			],
+			"description":"The name of the regional language corresponding to this observation.",
+			"dataSchema": "iudx:Text"
+		},
+		"generalAdvisory": {
+			"type": [
+				"ValueDescriptor"
+			],
+			"description": "A general advisory to the farmers, for the cultivation of crops in regards to the conditions of weather, soil ,land etc. It may include warnings of potential catastrophical events.",
+			"dataSchema": "iudx:Text"
+
+		},
+		"generalAdvisoryRegional": {
+			"type": [
+				"ValueDescriptor"
+			],
+			"description":"A general advisory, provided in the regional language, to the farmers for the cultivation of crops in regards to the conditions of weather, soil ,land etc. It may include warnings of potential catastrophical events.",
+			"dataSchema": "iudx:Text"
+		},
+		"smsAdvisory": {
+			"type": [
+				"ValueDescriptor"
+			],
+			"description": "The advisory which has been communicated to farmers via messaging (SMS).",
+			"dataSchema": "iudx:Text"
+
+		},
+		"smsAdvisoryRegional": {
+			"type": [
+				"ValueDescriptor"
+			],
+			"description":"The advisory which has been communicated to farmers in their regional language, via messaging (SMS).",
+			"dataSchema": "iudx:Text"
+		},
+		"technicalAdvisory": {
+			"type": [
+				"ValueDescriptor"
+			],
+			"description": "An advisory to the farmers for the cultivation of a specific crop or rearing of livestock or about better agricultural practices corresponding to this observation.",
+			"dataSchema": "iudx:Text"
+
+		},
+		"technicalAdvisoryRegional": {
+			"type": [
+				"ValueDescriptor"
+			],
+			"description":"An advisory, provided in the regional language, to the farmers for the cultivation of a specific crop corresponding to this observation.",
+			"dataSchema": "iudx:Text"
+		},
+		"weatherSummary": {
+			"type": [
+				"ValueDescriptor"
+			],
+			"description": "A brief on how the weather has been in the past and/or is to be in the near future and/or is to prevail for the current day.",
+			"dataSchema": "iudx:Text"
+
+		},
+		"weatherSummaryRegional": {
+			"type": [
+				"ValueDescriptor"
+			],
+			"description":"A brief provided in the regional language on how the weather has been in the past and/or is to be in the near future and/or is to prevail for the current day.",
+			"dataSchema": "iudx:Text"
+		},
+		"observationDateTime": {
+			"type": [
+				"ValueDescriptor"
+			],
+			"description": "Last reported time of observation.",
+			"dataSchema": "adex:DateTime"
+		  }
+	
+	},
+	"dataSample":{
+		"observationDateTime": "2023-07-14T00:00:00+05:30",
+		"agriculturalCategory": "Horticulture",
+		"stateCode": "36",
+		"stateName": "Telangana",
+		"districtCode": "541",
+		"districtName": "KHAMMAM",
+		"subdistrictCode": "199",
+		"subdistrictName": "Khammam-Urban",
+		"commodityCode": "580",
+		"commodityName": "CHILLI",
+		"regionalLangID": "13",
+		"regionalLangName": "Telugu",
+		"generalAdvisory": "Total normal rainfall of Khammam district is 227.8 mm and actual rainfall is 121.0 mm from 1st June to 14th July. Go for sowing of rice nursery after 24 hours of seed treatment with 3g Carbendazim per kg for dry seed or 1g per kg for wet seed helps in reducing of seed borne diseases. Farmers have started the sowing of cotton, green gram, maize under soil dry conditions and raising of rice nursery wherever sufficient irrigation is available.",
+		"generalAdvisoryRegional": "ఖమ్మం జిల్లాలో జూన్ 01 నుండి జూలై 14 వరుకు సాధారణ వర్షపాతం 227.8 మి.మీ. కాగా ప్రస్తుతం 121.0 మి.మీ.ల వర్షం కురిసింది. కిలో పొడి వరి విత్తనానికి 3 గ్రా. కార్బండిజమ్ లేదా తడి విత్తనానికి 1 గ్రా. మందుతో విత్తన శుద్ధిచేసి 24 గంటల తర్వాత నారు మడిలో విత్తుకోవటం వలన నేల ద్వారా సంక్రమించే తెగుళ్ళను నివారించవచ్చు.",
+		"smsAdvisory": "To control sucking pests in vegetable crops, spray Dimethoate 2 ml or Acephate 1.5 g or Acetamiprid 0.25 g per liter of water.",
+		"smsAdvisoryRegional": "కూరగాయ పంటలలో రసంపీల్చే పురుగుల నివారణకు  లేదా డైమిథోయేట్ 2 మి.లీ లేదా ఎసిఫేట్ 1.5 గ్రా. లేదా ఎసిటామిప్రిడ్ 0.25 గ్రా. నీటికి కలిపి పిచికారి చేయాలి.",
+		"technicalAdvisory": "Farmers are suggested to go for rising of chilli nursery from July 1st week to August second week. Make sure not to stand water in the nursery. To control damping off in chilli nursery make soil drenching with  3g Metalaxyl or Copper oxychloride or 2.5g Ridomil MZ per litre of water immediately after emergence of seedlings.",
+		"technicalAdvisoryRegional": "రైతు సోదరులు మిరప నారును జులై మొదటి వారం నుంచి  ఆగష్టు రెండవ వారం వరకు పోసుకోవచ్చును. నారు మడిలో నీరు నిల్వ ఉండకుండా చేయాలి. మిరపలో నారు కుళ్ళు నివారణకు గింజలు మొలకెత్తిన వెంటనే  3 గ్రా. కాపర్ ఆక్సీ క్లోరైడ్ లేదా 2.5 గ్రా. రెడోమిల్ యం.జడ్. లీటరు నీటికి కలిపి పూర్తిగా తడపాలి.",
+		"weatherSummary": "During last three days fairly wide spread light to moderate rainfall received in the district. In the upcoming five days cloudy weather with light to moderate rainfall likely to occur at few places in the district. The maximum & minimum temperature range might be 34.1 – 35.5 deg and 23.6 – 25.5 deg. centigrade, respectively. As per the extended range forecast system (ERFS) above normal rainfall, below normal day and normal night temperature might be expected during 19th July to 25nd July in Telangana state. ",
+		"weatherSummaryRegional": "జిల్లాలో గత మూడు రోజులు తేలికపాటి నుంచి మోస్తరు వర్షాలు చాలా చోట్ల కురిసాయి. జిల్లాలో ఈ రోజు నుంచి రాగల నాలుగు రోజుల వరకు ఆకాశం మేఘావృతమై ఉండి, తేలికపాటి నుంచి మోస్తరు వర్షాలు కొన్నిచోట్ల కురిసే అవకాశం ఉంది. పగటి మరియు రాత్రి ఉష్ణోగ్రతలు 34.1 – 35.5 డి. సెం. మరియు 23.6– 25.3 డి. సెం. గా నమోదయ్యే సూచన కలదు. ERFS ముందస్తు వాతావరణ సమాచారం ప్రకారం తెలంగాణలో జూలై 19 నుంచి జూలై 25 వరకు సాధారణం కంటే ఎక్కువ వర్షపాతం మరియు సాధారణం కంటే తక్కువ పగటి & రాత్రి ఉష్ణోగ్రతలు నమోదయ్యే సూచన కలదు. "
+	}
+}

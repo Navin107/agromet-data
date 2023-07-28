@@ -1,0 +1,31 @@
+{
+    "@context": "https://agrijson.adex.org.in/",
+    "type": [
+      "iudx:ResourceGroup",
+      "iudx:AgriAdvisory",
+      "adex:ResourceGroup",
+      "adex:AgriAdvisory"
+    ],
+    "id": "imd.gov.in/d7733b0c544dfb3137767e5efa2c1ccd3b069bf8/rs.adex.org.in/agromet-imd",
+    "name": "agromet-imd",
+    "label": "IMD Agromet Advisory for Telangana State",
+    "description": "Publishes timely advisory services provided by Agromet for welfare of farmers in regards to weather cautions, pest control, livestock rearing etc. in Telangana state",  
+    "tags": [
+      "commodity",
+      "Advisory",
+      "district",
+      "crop",
+      "subdistrict",
+      "general advisory",
+      "state advisory",
+      "regional advisory"
+    ],
+    "accessPolicy": "OPEN",
+    "provider": "imd.gov.in/d7733b0c544dfb3137767e5efa2c1ccd3b069bf8",
+    "itemStatus": "ACTIVE",
+    "resourceServer": "datakaveri.org/5841d4c98a9ef8ab708e01a3c5fc1ab955e6ada0/rs.adex.org.in",
+    "location": {
+      "type": "Place",
+      "address": "Telangana"
+    }
+}   

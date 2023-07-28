@@ -1,0 +1,100 @@
+{
+	"@context": "https://voc.iudx.org.in/",
+	"type": [
+		"adex:Resource",
+		"adex:AgriAdvisory",
+		"iudx:Resource",
+		"iudx:AgriAdvisory"
+	],
+	"id": "imd.gov.in/d7733b0c544dfb3137767e5efa2c1ccd3b069bf8/rs.adex.org.in/agromet-imd/commodity-codes",
+	"name": "commodity-codes",
+	"label": "Commodity Codes for Agromet Advisory Data in Telangana State",
+	"description": "Publishes commodity data information such as commodity code and commodity name for various districts and mandals (ASD) of Telangana state.",
+	"tags": [
+		"Advisory",
+		"district",
+		"crop",
+		"commodity",
+		"data",
+		"code"
+	],
+	"itemStatus": "ACTIVE",
+	"resourceGroup": "imd.gov.in/d7733b0c544dfb3137767e5efa2c1ccd3b069bf8/rs.adex.org.in/agromet-imd",
+	"provider": "imd.gov.in/d7733b0c544dfb3137767e5efa2c1ccd3b069bf8",
+	"resourceType": "DATASET",
+	"adexResourceAPIs": [
+		"ATTR"
+	],
+	"iudxResourceAPIs": [
+		"ATTR"
+	],
+	"location": {
+		"geometry": {
+			"coordinates": [
+				[
+					[
+						77.179011,
+						18.556975
+					],
+					[
+						77.047585,
+						15.14819
+					],
+					[
+						81.059914,
+						16.55208
+					],
+					[
+						81.384916,
+						17.721272
+					],
+					[
+						80.569225,
+						19.514793
+					],
+					[
+						78.217742,
+						20.06644
+					],
+					[
+						77.179011,
+						18.556975
+					]
+				]
+			],
+			"type": "Polygon"
+		},
+		"type": "Place",
+		"address": "Telangana"
+	},
+	"dataDescriptor": {
+		"@context": "https://agrijson.adex.org.in/",
+		"type": [
+			"iudx:DataDescriptor",
+			"iudx:AgriAdvisory",
+			"adex:DataDescriptor",
+			"adex:AgriAdvisory"
+		],
+		"dataDescriptorLabel": "Data descriptor for Agromet Advisory Commodity Data Information for various district and mandals (ASD) in Telangana State",
+		"description": "Data attribute details of agromet advisory commodity data information for various district and mandals (ASD) in Telangana State.",
+		"commodityCode": {
+			"type": [
+				"ValueDescriptor"
+			],
+			"description": "The unique code for the commodity corresponding to this observation.",
+			"dataSchema": "iudx:Text"
+
+		},
+		"commodityName": {
+			"type": [
+				"ValueDescriptor"
+			],
+			"description":"The common/local name of the commodity corresponding to the observation.",
+			"dataSchema": "iudx:Text"
+		}
+	},
+	"dataSample":{
+		"commodityCode": "580",
+		"commodityName": "CHILLI"
+	}
+}

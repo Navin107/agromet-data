@@ -1,0 +1,100 @@
+{
+	"@context": "https://voc.iudx.org.in/",
+	"type": [
+		"adex:Resource",
+		"adex:AgriAdvisory",
+		"iudx:Resource",
+		"iudx:AgriAdvisory"
+	],
+	"id": "imd.gov.in/d7733b0c544dfb3137767e5efa2c1ccd3b069bf8/rs.adex.org.in/agromet-imd/district-codes",
+	"name": "district-codes",
+	"label": "District Codes for Agromet Advisory Data in Telangana State",
+	"description": "Publishes district data information such as district code and district name for various districts and mandals (ASD) of Telangana state.",
+	"tags": [
+		"Advisory",
+		"district",
+		"crop",
+		"district",
+		"data",
+		"code"
+	],
+	"itemStatus": "ACTIVE",
+	"resourceGroup": "imd.gov.in/d7733b0c544dfb3137767e5efa2c1ccd3b069bf8/rs.adex.org.in/agromet-imd",
+	"provider": "imd.gov.in/d7733b0c544dfb3137767e5efa2c1ccd3b069bf8",
+	"resourceType": "DATASET",
+	"adexResourceAPIs": [
+		"ATTR"
+	],
+	"iudxResourceAPIs": [
+		"ATTR"
+	],
+	"location": {
+		"geometry": {
+			"coordinates": [
+				[
+					[
+						77.179011,
+						18.556975
+					],
+					[
+						77.047585,
+						15.14819
+					],
+					[
+						81.059914,
+						16.55208
+					],
+					[
+						81.384916,
+						17.721272
+					],
+					[
+						80.569225,
+						19.514793
+					],
+					[
+						78.217742,
+						20.06644
+					],
+					[
+						77.179011,
+						18.556975
+					]
+				]
+			],
+			"type": "Polygon"
+		},
+		"type": "Place",
+		"address": "Telangana"
+	},
+	"dataDescriptor": {
+		"@context": "https://agrijson.adex.org.in/",
+		"type": [
+			"iudx:DataDescriptor",
+			"iudx:AgriAdvisory",
+			"adex:DataDescriptor",
+			"adex:AgriAdvisory"
+		],
+		"dataDescriptorLabel": "Data descriptor for Agromet Advisory District Data Information for various district and mandals (ASD) in Telangana State",
+		"description": "Data attribute details of agromet advisory district data information for various district and mandals (ASD) in Telangana State.",
+		"districtCode": {
+			"type": [
+				"ValueDescriptor"
+			],
+			"description": "The district code corresponding to this observation.",
+			"dataSchema": "iudx:Text"
+
+		},
+		"districtName": {
+			"type": [
+				"ValueDescriptor"
+			],
+			"description":"Name of the district corresponding to this observation.",
+			"dataSchema": "iudx:Text"
+		}
+	},
+	"dataSample":{
+		"districtCode": "541",
+		"districtName": "KHAMMAM"
+	}
+}

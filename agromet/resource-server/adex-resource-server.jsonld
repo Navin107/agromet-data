@@ -1,0 +1,46 @@
+{
+  "@context": "https://voc.iudx.org.in/",
+  "type": [
+    "iudx:ResourceServer",
+    "adex:ResourceServer"
+  ],
+  "id": "datakaveri.org/5841d4c98a9ef8ab708e01a3c5fc1ab955e6ada0/rs.adex.org.in",
+  "provider": "datakaveri.org/5841d4c98a9ef8ab708e01a3c5fc1ab955e6ada0",
+  "name": "rs.adex.org.in",
+  "description": "Multi tenanted ADEX resource server",
+  "tags": [
+    "ADEX",
+    "Resource",
+    "Server",
+    "Platform"
+  ],
+  "resourceServerHTTPAccessURL": "rs.adex.org.in",
+  "resourceServerStreamingAccessURL": "databroker.adex.org.in",
+  "resourceServerOrg": {
+    "name": "adex",
+    "additionalInfoURL": "https://adex.org.in",
+    "location": {
+      "type": "Place",
+      "address": "IISc, Bangalore",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.570423,
+          13.013945
+        ]
+      }
+    }
+  },
+  "location": {
+    "type": "Place",
+    "address": "IISc, Bangalore",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.570423,
+        13.013945
+      ]
+    }
+  },
+  "itemStatus": "ACTIVE"
+}

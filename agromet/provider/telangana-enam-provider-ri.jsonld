@@ -1,0 +1,25 @@
+{
+    "@context": "https://agrijson.adex.org.in/",
+    "type": [
+      "iudx:Provider",
+      "adex:Provider"
+    ],
+    "id": "tsmarketing.in/fb9a687092654eef990c3471ab50a5910fd08d12",
+    "name": "tsmarketing",
+    "description": "Agricultural Marketing, Government of Telangana",
+    "providerOrg": {
+      "name": "tsmarketing",
+      "additionalInfoURL": "http://tsmarketing.in/",
+      "location": {
+        "type": "Place",
+        "address": "Hyderabad, Telangana",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.47417,
+            17.39854
+          ]
+        }
+      }
+    }
+}

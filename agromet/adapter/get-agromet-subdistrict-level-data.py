@@ -59,7 +59,7 @@ class agrometData:
         for packet in list_of_packets:
             v = packet["custom_date"]
             transformed_record={
-                "id":"<>",
+                "id":id,
                 "observationDateTime":f"{parser.parse(v).isoformat()}+05:30",
                 "agriculturalCategory":packet["category_name"],
                 "stateCode":packet["state_id"],
